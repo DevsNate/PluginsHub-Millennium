@@ -1,0 +1,20 @@
+{
+  "type": "module",
+  "name": "plugins-hub-millennium",
+  "version": "1.0",
+  "description": "Adds one plug tab to Steam Big Picture's Quick Access menu with the panels of your Millennium plugins, and lets you choose the tab game pages open on.",
+  "author": "DevsNate",
+  "license": "GPL-2.0-only",
+  "scripts": {
+    "dev": "starlight watch",
+    "build": "node -e \"require('fs').mkdirSync('dist',{recursive:true})\" && starlight pack --release && node scripts/checks/starlight-bundle.mjs",
+    "check": "node scripts/run-checks.mjs"
+  },
+  "devDependencies": {
+    "@steambrew/starlight": "^1.1.7",
+    "@types/react": "19.1.1",
+    "@types/react-dom": "19.1.1",
+    "fengari": "0.1.5",
+    "typescript": "^5.9.3"
+  }
+}

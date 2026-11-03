@@ -1,0 +1,16 @@
+[plugin]
+id = "plugins-hub"
+name = "Plugins Hub"
+version = "1.0"
+author = "DevsNate"
+description = "Adds one plug tab to Steam Big Picture's Quick Access menu with the panels of your Millennium plugins, and lets you choose the tab game pages open on."
+
+[backend]
+entry = "backend/main.lua"
+sources = ["backend/**/*.lua"]
+
+[frontend]
+entry = "frontend/index.tsx"
+
+[compiler]
+output_path = "dist/plugins-hub.star"
